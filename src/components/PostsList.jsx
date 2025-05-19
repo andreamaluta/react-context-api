@@ -1,10 +1,16 @@
 import React from 'react'
 
-const PostsList = () => {
+const PostsList = ({ posts }) => {
     return (
-        <div>
-            <h1>Hello world</h1>
-        </div>
+        <ul>
+            {posts.map((post) => (
+                <li key={post.id}>
+                    {post.title}
+                    <br />
+                    {post.content}
+                </li>
+            ))}
+        </ul>
     )
 }
 

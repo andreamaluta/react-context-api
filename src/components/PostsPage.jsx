@@ -1,10 +1,10 @@
 import React from 'react'
 import PostsList from './PostsList'
 
-const PostsPage = () => {
+const PostsPage = ({ posts }) => {
     return (
         <div>
-            <PostsList />
+            <PostsList posts={posts} />
         </div>
     )
 }
